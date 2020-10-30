@@ -2,11 +2,11 @@ from selenium.webdriver.common.by import By
 
 class HomePageLocators():
 
-    ZALOGUJ_BTN = (By.XPATH, '//button[@data-test="navigation-menu-signin"]')
+    SIGN_IN_BTN= (By.XPATH, '//button[@data-test="navigation-menu-signin"]')
 
 class LoginPageLocators():
 
-    REJESTRACJA_BTN = (By.XPATH, '//button[text()=" Rejestracja "]')
+    REGISTER_BTN = (By.XPATH, '//button[text()=" Rejestracja "]')
 
 class RegisterPageLocators():
 
@@ -17,7 +17,6 @@ class RegisterPageLocators():
     COUNTRY_CODE = (By.XPATH, '//div[@class="phone-number__calling-code-selector__empty__placeholder"]')
     COUNTRY_CODE_INPUT = (By.NAME, 'phone-number-country-code')
     COUNTRY_CODE_TO_CHOOSE = (By.XPATH, "//li[@class='phone-number__calling-code-selector__dropdown__item']")
-    # Dopisać potrzebne lokatory
     TELEPHONE_INPUT = (By.XPATH, '//input[@data-test="check-in-step-contact-phone-number"]')
     EMAIL_INPUT = (By.XPATH, '//input[@data-test="booking-register-email"]')
     REGISTRATION_ERRORS = (By.XPATH, '//span[@class="rf-input__error__message"]/span')
