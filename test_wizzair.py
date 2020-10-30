@@ -20,7 +20,7 @@ kraj = "Polska"
 
 class WizzairRegistration(unittest.TestCase):
     def setUp(self):
-        self.driver =webdriver.Chrome()
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.get('https://wizzair.com/pl-pl#/')
 
