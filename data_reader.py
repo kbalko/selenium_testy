@@ -2,10 +2,10 @@
 import csv
 
 
-def read_data(path):
+def read_data(file_name):
 
     rows = []
-    data = open(str(path), "rt")
+    data = open(str(file_name), "rt")
     content = csv.reader(data)
 
     next(content, None)
