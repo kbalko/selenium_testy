@@ -13,7 +13,7 @@ file_path = os.path.join(THIS_DIR, '..', 'data/invalid_emails_regist.csv')
 @ddt
 class RegistrationTest(BaseTest):
 
-    @data(*data_reader.get_data(file_path))
+    @data(*data_reader.read_data(file_path))
     @unpack
     def test_incorrect_email(self, name, surname, country_code, phone, invalid_email, password, country, gender):
         hp = HomePage(self.driver)
@@ -30,6 +30,7 @@ class RegistrationTest(BaseTest):
         rp.fill_password(password)
         rp.choose_nationality(country)
         rp.accept_privacy_policy()
+        rp.accept_terms()
         rp.verify_visible_errors(1, ["Nieprawidłowy adres e-mail"])
 
 if __name__=="__main__":

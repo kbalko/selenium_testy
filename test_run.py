@@ -1,5 +1,5 @@
 import unittest
-from tests.register_page_test import RegistrationTest
+from tests.register_test import RegistrationTest
 
 # load test case
 registration_test = unittest.TestLoader().loadTestsFromTestCase(RegistrationTest)

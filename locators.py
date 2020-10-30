@@ -23,5 +23,6 @@ class RegisterPageLocators():
     PASSWORD_INPUT = (By.XPATH, '//input[@data-test="booking-register-password"]')
     NATIONALITY_INPUT = (By.XPATH, '//input[@data-test="booking-register-country"]')
     COUNTRIES_CONTAINER = (By.XPATH, "//div[@class='register-form__country-container__locations']")
-    PRIVACY_POLICY_CHECKBOX = (By.XPATH, "//label[@for='registration-privacy-policy-checkbox'][@class='rf-checkbox__label']")
+    PRIVACY_POLICY_CHECKBOX = (By.XPATH, '//*[@id="checkbox-privacyPolicy"]')
+    TERMS_CHECKBOX = (By.XPATH, '//*[@id="checkbox-wizzAccountPolicy"]')
     REGISTER_BUTTON = (By.XPATH, '//button[@data-test="booking-register-submit"]')

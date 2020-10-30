@@ -52,6 +52,8 @@ class RegisterPage(BasePage):
     def accept_privacy_policy(self):
         self.driver.find_element(*RegisterPageLocators.PRIVACY_POLICY_CHECKBOX).click()
 
+    def accept_terms(self):
+        self.driver.find_element(*RegisterPageLocators.TERMS_CHECKBOX).click()
 
     def verify_visible_errors(self, number_of_errors, errors_texts):
         error_notices = self.driver.find_elements(*RegisterPageLocators.REGISTRATION_ERRORS)
